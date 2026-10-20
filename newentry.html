@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marginalia — New Entry</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="wordmark">Margin<span>alia</span></a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">&larr; Home</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="entry-form-wrap">
+      <div class="page-intro">
+        <h1 class="page-title">New page</h1>
+        <p class="page-subtitle" id="today-label"></p>
+      </div>
+
+      <form class="entry-form" id="entry-form">
+        <div class="field">
+          <label for="entry-title">Title</label>
+          <input type="text" id="entry-title" name="title" placeholder="Give today a heading" required />
+        </div>
+
+        <div class="field">
+          <label for="entry-body">Reflection</label>
+          <textarea id="entry-body" name="body" placeholder="Write whatever today needs..." required></textarea>
+        </div>
+
+        <div class="form-footer">
+          <button type="submit" class="btn btn-primary" id="save-btn">Save Entry</button>
+          <span class="save-confirm" id="save-confirm">Saved to your vault ✓</span>
+        </div>
+        <p class="form-note">Entries save to this browser only, using localStorage.</p>
+      </form>
+    </div>
+  </main>
+
+  <script src="storage.js"></script>
+  <script src="new-entry.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marginalia — Vault</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="wordmark">Margin<span>alia</span></a>
+    <nav class="main-nav">
+      <a href="new-entry.html" class="btn btn-primary">New Entry</a>
+      <a href="index.html" class="avatar" title="Home">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="12" cy="8" r="3.5"></circle>
+          <path d="M4.5 20c1.5-4 5-6 7.5-6s6 2 7.5 6"></path>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="page-intro">
+      <h1 class="page-title">The full vault</h1>
+      <p class="page-subtitle">Every entry you've written, oldest at the bottom.</p>
+    </div>
+
+    <div class="ledger" id="ledger">
+      <!-- Milestone 1: hardcoded full-width rows to test the layout.
+           Milestone 5 will replace this content with every entry from localStorage. -->
+      <div class="ledger-row">
+        <span class="ledger-date">Mar 14, 2026</span>
+        <div>
+          <h2 class="ledger-title">A slow Sunday</h2>
+          <p class="ledger-body">Spent the morning re-reading old notes and realised how much has shifted since January. Nothing urgent today, just noticing.</p>
+        </div>
+      </div>
+
+      <div class="ledger-row">
+        <span class="ledger-date">Mar 12, 2026</span>
+        <div>
+          <h2 class="ledger-title">Small win at work</h2>
+          <p class="ledger-body">Finally fixed the bug that had been sitting in the tracker for two weeks. Felt disproportionately good about it.</p>
+        </div>
+      </div>
+
+      <div class="ledger-row">
+        <span class="ledger-date">Mar 10, 2026</span>
+        <div>
+          <h2 class="ledger-title">Rain again</h2>
+          <p class="ledger-body">Walked to the shop anyway. Sometimes the weather is just weather and doesn't need to mean anything.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="storage.js"></script>
+  <script src="vault.js"></script>
+</body>
+</html>
+
