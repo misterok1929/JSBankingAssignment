@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marginalia — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="wordmark">Margin<span>alia</span></a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="vault.html" class="nav-link">Vault</a>
+      <a href="new-entry.html" class="btn btn-primary">New Entry</a>
+      <a href="profile.html" class="avatar" title="Profile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="12" cy="8" r="3.5"></circle>
+          <path d="M4.5 20c1.5-4 5-6 7.5-6s6 2 7.5 6"></path>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="hero" id="hero">
+      <div class="hero-paper">
+        <h1 class="hero-title">A quiet place to write the day down.</h1>
+        <p class="hero-lead">Marginalia is a private diary that lives in your browser. Write a page, give it a date, and find it again whenever you want to look back.</p>
+        <div class="hero-actions">
+          <a href="new-entry.html" class="btn btn-primary">Start writing</a>
+          <a href="login.html" class="btn btn-secondary">Log in or register</a>
+        </div>
+      </div>
+      <ul class="hero-points">
+        <li>
+          <h2>Write freely</h2>
+          <p>A title, your thoughts, and any date you choose. Edit or delete a page whenever you like.</p>
+        </li>
+        <li>
+          <h2>Find anything</h2>
+          <p>Your five newest pages sit on the home page. The vault keeps every page, with search.</p>
+        </li>
+        <li>
+          <h2>Keep it yours</h2>
+          <p>Pages are saved on this device. No account is needed, but you can add one for a separate diary.</p>
+        </li>
+      </ul>
+    </section>
+
+    <div class="page-intro">
+      <h2 class="page-title">Recent pages</h2>
+      <p class="page-subtitle">Your last five entries. Head to the vault for the full history.</p>
+    </div>
+
+    <section class="entry-grid" id="entry-grid">
+      <!-- Milestone 1: 5 hardcoded placeholder cards to test grid spacing.
+           Milestone 4 will replace this content with cards built from localStorage. -->
+      <article class="entry-card">
+        <p class="entry-card-date">Mar 14, 2026</p>
+        <h2 class="entry-card-title">A slow Sunday</h2>
+        <p class="entry-card-snippet">Spent the morning re-reading old notes and realised how much has shifted since January. Nothing urgent today, just noticing.</p>
+      </article>
+
+      <article class="entry-card">
+        <p class="entry-card-date">Mar 12, 2026</p>
+        <h2 class="entry-card-title">Small win at work</h2>
+        <p class="entry-card-snippet">Finally fixed the bug that had been sitting in the tracker for two weeks. Felt disproportionately good about it.</p>
+      </article>
+
+      <article class="entry-card">
+        <p class="entry-card-date">Mar 10, 2026</p>
+        <h2 class="entry-card-title">Rain again</h2>
+        <p class="entry-card-snippet">Walked to the shop anyway. Sometimes the weather is just weather and doesn't need to mean anything.</p>
+      </article>
+
+      <article class="entry-card">
+        <p class="entry-card-date">Mar 8, 2026</p>
+        <h2 class="entry-card-title">Dinner with N.</h2>
+        <p class="entry-card-snippet">Good conversation about the new flat. Trying to remember to write these ordinary evenings down more often.</p>
+      </article>
+
+      <article class="entry-card">
+        <p class="entry-card-date">Mar 5, 2026</p>
+        <h2 class="entry-card-title">Starting this diary</h2>
+        <p class="entry-card-snippet">First entry. No particular reason to start today other than it felt like the right amount of empty page ahead.</p>
+      </article>
+    </section>
+  </main>
+
+  <script src="storage.js"></script>
+  <script src="auth.js"></script>
+  <script src="home.js"></script>
+</body>
+</html>
