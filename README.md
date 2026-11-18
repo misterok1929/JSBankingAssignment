@@ -4,8 +4,8 @@ A simple banking app built for my JavaScript Essentials course.
 Users can check their balance, make deposits and withdrawals,
 and view their transaction history.
 
-## Repository
-https://github.com/misterok1929/JSBankingAssignment
+## Live demo
+https://misterok1929.github.io/JSBankingAssignment/
 
 ## Features
 - View account balance
@@ -14,9 +14,9 @@ https://github.com/misterok1929/JSBankingAssignment
 - Input checks (e.g. can't withdraw more than the balance)
 
 ## How to run
-1. Clone the repo:
-   git clone https://github.com/misterok1929/JSBankingAssignment.git
-2. Open `index.html` in your browser
+- Open the live demo link above, or
+- Clone the repo and open `index.html` in your browser:
+  git clone https://github.com/misterok1929/JSBankingAssignment.git
 
 ## Built with
 - HTML
