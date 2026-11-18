@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marginalia — Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="wordmark">Margin<span>alia</span></a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="vault.html" class="nav-link">Vault</a>
+      <a href="new-entry.html" class="btn btn-primary">New Entry</a>
+      <a href="profile.html" class="avatar" title="Profile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="12" cy="8" r="3.5"></circle>
+          <path d="M4.5 20c1.5-4 5-6 7.5-6s6 2 7.5 6"></path>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="page-intro">
+      <h1 class="page-title">Your diary</h1>
+      <p class="page-subtitle" id="who">A summary of what's saved in this browser.</p>
+    </div>
+
+    <section class="stats">
+      <div class="stat">
+        <span class="stat-number" id="stat-count">0</span>
+        <span class="stat-label">Entries written</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" id="stat-words">0</span>
+        <span class="stat-label">Words written</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number" id="stat-first">–</span>
+        <span class="stat-label">First entry</span>
+      </div>
+    </section>
+
+    <section class="profile-actions">
+      <h2 class="section-title">Your data</h2>
+      <p class="page-subtitle">Entries are stored only in this browser. Download a backup if you want a copy.</p>
+      <div class="action-row">
+        <button type="button" class="btn btn-primary" id="export-btn">Download backup</button>
+        <button type="button" class="btn btn-danger" id="clear-btn">Delete all entries</button>
+      </div>
+      <p class="save-confirm" id="profile-message"></p>
+    </section>
+  </main>
+
+  <script src="storage.js"></script>
+  <script src="auth.js"></script>
+  <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marginalia — New Entry</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="wordmark">Margin<span>alia</span></a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="vault.html" class="nav-link">Vault</a>
+      <a href="new-entry.html" class="btn btn-primary">New Entry</a>
+      <a href="profile.html" class="avatar" title="Profile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="12" cy="8" r="3.5"></circle>
+          <path d="M4.5 20c1.5-4 5-6 7.5-6s6 2 7.5 6"></path>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="entry-form-wrap">
+      <div class="page-intro">
+        <h1 class="page-title" id="form-heading">New page</h1>
+        <p class="page-subtitle" id="form-subtitle">Write today's entry, or pick another date.</p>
+      </div>
+
+      <form class="entry-form" id="entry-form">
+        <div class="field">
+          <label for="entry-date">Date</label>
+          <input type="date" id="entry-date" name="date" required />
+        </div>
+
+        <div class="field">
+          <label for="entry-title">Title</label>
+          <input type="text" id="entry-title" name="title" placeholder="Give the day a heading" maxlength="80" required />
+        </div>
+
+        <div class="field">
+          <label for="entry-body">Reflection</label>
+          <textarea id="entry-body" name="body" placeholder="Write whatever today needs..." required></textarea>
+        </div>
+
+        <div class="form-footer">
+          <button type="submit" class="btn btn-primary" id="save-btn">Save Entry</button>
+          <span class="save-confirm" id="save-confirm" role="status">Saved to your vault ✓</span>
+        </div>
+        <p class="form-note" id="form-note">Entries save to this browser only, using localStorage.</p>
+      </form>
+    </div>
+  </main>
+
+  <script src="storage.js"></script>
+  <script src="auth.js"></script>
+  <script src="new-entry.js"></script>
+</body>
+</html>

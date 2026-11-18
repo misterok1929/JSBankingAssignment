@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marginalia — Log in</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="index.html" class="wordmark">Margin<span>alia</span></a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="vault.html" class="nav-link">Vault</a>
+      <a href="new-entry.html" class="btn btn-primary">New Entry</a>
+      <a href="profile.html" class="avatar" title="Profile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <circle cx="12" cy="8" r="3.5"></circle>
+          <path d="M4.5 20c1.5-4 5-6 7.5-6s6 2 7.5 6"></path>
+        </svg>
+      </a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <div class="entry-form-wrap">
+      <div class="page-intro">
+        <h1 class="page-title">Your account</h1>
+        <p class="page-subtitle">Accounts keep separate diaries. Everything stays in this browser.</p>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab active" id="tab-login" role="tab" aria-selected="true">Log in</button>
+        <button type="button" class="tab" id="tab-register" role="tab" aria-selected="false">Register</button>
+      </div>
+
+      <form class="entry-form" id="login-form">
+        <div class="field">
+          <label for="login-user">Username</label>
+          <input type="text" id="login-user" autocomplete="username" required />
+        </div>
+        <div class="field">
+          <label for="login-pass">Password</label>
+          <input type="password" id="login-pass" autocomplete="current-password" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Log in</button>
+      </form>
+
+      <form class="entry-form" id="register-form" hidden>
+        <div class="field">
+          <label for="reg-user">Choose a username</label>
+          <input type="text" id="reg-user" autocomplete="username" maxlength="20" required />
+        </div>
+        <div class="field">
+          <label for="reg-pass">Choose a password</label>
+          <input type="password" id="reg-pass" autocomplete="new-password" minlength="6" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Create account</button>
+      </form>
+
+      <p class="form-message" id="auth-message" role="alert"></p>
+      <p class="form-note">This is a practice project with no server, so it isn't real security. Don't use a password you use anywhere else.</p>
+    </div>
+  </main>
+
+  <script src="storage.js"></script>
+  <script src="auth.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
