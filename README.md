@@ -1,2 +1,0 @@
-# JSBankingAssignment
-JSBankingAssignment
