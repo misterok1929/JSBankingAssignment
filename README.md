@@ -6,7 +6,19 @@ browser console.
 
 **Live project:** https://misterok1929.github.io/JSBankingAssignment/
 
-![Browser console output](console-output.png)
+## Screenshots
+
+**1. The demo output when the page loads.** Both accounts, the deposits and withdrawals, and `Insufficient funds.` when Sara tries to withdraw 1500.
+
+![Demo output in the browser console](console-output1.png)
+
+**2. The class and its constructor.** Creating a new `BankAccount` in the console and expanding it to show its properties and its methods (`deposit`, `withdraw`, `checkBalance`).
+
+![A BankAccount object expanded in the console](console-output2.png)
+
+**3. The deposit and withdraw logic.** A deposit of 50 succeeds, and a withdrawal of 5000 is refused.
+
+![Deposit and withdraw commands in the console](console-output3.png)
 
 ## The three files
 
